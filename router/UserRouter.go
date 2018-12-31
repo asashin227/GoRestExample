@@ -2,9 +2,10 @@ package router
 
 import (
 	"../controller"
-	"github.com/emicklei/go-restful"
+	restful "github.com/emicklei/go-restful"
 )
 
+// ユーザを取得します
 func GetUserRoute() {
 	ws := new(restful.WebService)
 	ws.Route(ws.GET("/user/{user_id}").To(controller.FindUser).

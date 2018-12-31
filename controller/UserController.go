@@ -1,9 +1,10 @@
 package controller
 
 import (
-	"../model"
-	"github.com/emicklei/go-restful"
 	"net/http"
+
+	"../model"
+	restful "github.com/emicklei/go-restful"
 )
 
 func FindUser(req *restful.Request, resp *restful.Response) {

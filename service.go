@@ -1,8 +1,9 @@
 package main
 
 import (
-	"./router"
 	"net/http"
+
+	router "./router"
 )
 
 func main() {
