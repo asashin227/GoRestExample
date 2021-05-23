@@ -3,7 +3,7 @@ package controller
 import (
 	"net/http"
 
-	"../model"
+	"GoRestExample/model"
 	restful "github.com/emicklei/go-restful"
 )
 

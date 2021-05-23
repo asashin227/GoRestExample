@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	router "./router"
+	router "GoRestExample/router"
 )
 
 func main() {
@@ -11,5 +11,10 @@ func main() {
 	router.GetUserRoute()
 
 	// 8080ポートで待ち受ける
-	http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		panic(err)
+	} else {
+		println("start!")
+	}
 }

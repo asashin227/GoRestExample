@@ -1,7 +1,7 @@
 package router
 
 import (
-	"../controller"
+	"GoRestExample/controller"
 	restful "github.com/emicklei/go-restful"
 )
 
